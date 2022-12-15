@@ -3,10 +3,16 @@
     padding:0;
     box-sizing: border-box;
 }
+
+ul, ol, menu{
+    list-style: none;
+}
+
 .container{
     max-width: 900px;
     margin: 0 auto;
 }
+
 .row{
     display: flex;
 }
@@ -20,21 +26,24 @@
 }
 
 .items-center{
-    
+    align-items: center;
 }
 
 .main-header .row{
-    justify-content: space-between;
     align-items: center;
 }
 
 .container-small{
-    max-width: 750px;
-
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 .logo-wrapper{
     min-height: 80px;
+}
+
+.logo {
+    min-width: 150px;
 }
 
 .page-footer{
@@ -45,18 +54,24 @@
     padding: 50px 0;
 }
 .col-40{
-    flex-basis: 40px;
+    flex-basis: 40%;
 }
 
 .col-60{
-
+    flex-basis: 60%;
 }
 
 .col-23{
     flex-basis: calc(100% / 3);
 }
 .col-16{
-    flex-basis: calc(100% / 3);
+    flex-basis: calc(100% / 6);
+}
+.col-100{
+    flex-basis: 100%;
+}
+.bg-gray{
+    background-color: #d3d3d3;
 }
 
 /* guarda colori elementi 
@@ -64,12 +79,11 @@ DEBUG: remove class debug dal body per disabilitarlo */
 
 
 .debug .main-header{
-    background-color: rgb(132, 235, 241);
+    background-color: #add8e6;;
     padding: 20px 0;
 }
 
 .debug .page-footer{
-    background-color: rgb(53, 41, 41);
     padding: 20px 0;
 }
 .debug .main-content{
@@ -105,7 +119,7 @@ background-color: blue;
 }
 
 
-.debug .page-footer{
-
+.debug .page-footer [class^='col']{
+    border-color: white;
 }
 
