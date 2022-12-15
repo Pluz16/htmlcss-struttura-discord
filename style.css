@@ -11,6 +11,30 @@
     display: flex;
 }
 
+.main-header .row{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-small{
+    max-width: 750px;
+
+}
+
+.logo-wrapper{
+    min-height: 80px;
+}
+.section{
+    padding: 50px 0;
+}
+.col-40{
+    flex-basis: 40px;
+}
+
+.col-60{
+
+}
+
 /* guarda colori elementi 
 DEBUG: remove class debug dal body per disabilitarlo */
 
@@ -27,13 +51,32 @@ DEBUG: remove class debug dal body per disabilitarlo */
 .debug .main-content{
     padding: 30px 0;
 }
-.debug .container{
-    
-    border
+.debug .container,
+.debug .container-small{
+    padding: 20px;
+    border: 4px dashed tomato
 }
 
 .debug .row{
+    border: 4px dotted cornflowerblue;
+    padding: 30px;
+}
+
+.debug [class^='col'*]{
+    border: 3px solid black
+    padding: 5px 15px;
+}
+
+.debug main[class^='col']{
+    min-height: 300px;
+}
+
+.debug .hero{
+background-color: blue;
 
 }
 
-.debug
+.debug .hero{
+    min-height: 500px;
+}
+
