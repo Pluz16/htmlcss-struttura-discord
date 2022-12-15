@@ -11,6 +11,18 @@
     display: flex;
 }
 
+.row-reverse{
+    flex-direction: row-reverse;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.items-center{
+    
+}
+
 .main-header .row{
     justify-content: space-between;
     align-items: center;
@@ -24,6 +36,11 @@
 .logo-wrapper{
     min-height: 80px;
 }
+
+.page-footer{
+    background-color: black;
+    color: aliceblue;
+}
 .section{
     padding: 50px 0;
 }
@@ -33,6 +50,13 @@
 
 .col-60{
 
+}
+
+.col-23{
+    flex-basis: calc(100% / 3);
+}
+.col-16{
+    flex-basis: calc(100% / 3);
 }
 
 /* guarda colori elementi 
@@ -78,5 +102,10 @@ background-color: blue;
 
 .debug .hero{
     min-height: 500px;
+}
+
+
+.debug .page-footer{
+
 }
 
